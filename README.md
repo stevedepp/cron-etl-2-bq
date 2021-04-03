@@ -6,6 +6,8 @@ Transcript & slides are below. Please click this demo video to hear it with soun
 
 #
 
+> Hello everyone thank you for watching my video.  This week I stepped through the manual and automatic versions of ETL presented in Lakshamn’s chapter 2.  
+
 **Demo Video 4**  
 ## cron a batch ETL pipeline into Big Query  
 
@@ -33,6 +35,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> For the manual path, we need to arrange for proper scraping to download headings and variables, ...
+
 ### manual path to ETL into Big Query  
 
 **download**  
@@ -44,6 +48,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... adjust the variables for generic month & year scraping, ...
+
 ### manual path to ETL into Big Query  
 
 **download**  
@@ -53,9 +59,9 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 <img width="630" alt="_FL_UM2CORIGIN_AIRPORT_ID2CRG_ORTD" src="https://user-images.githubusercontent.com/38410965/113493595-94680f00-94ae-11eb-83c1-1ae57a1a931d.png">
 
-
-
 #
+
+> ... test it out, ...
 
 ### manual path to ETL into Big Query  
 
@@ -66,6 +72,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... unzip, ...
+
 ### manual path to ETL into Big Query  
 
 **unzip**  
@@ -73,6 +81,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="682" alt="touch zip_to_cav sh" src="https://user-images.githubusercontent.com/38410965/113493638-338d0680-94af-11eb-93ae-9b882e224774.png">
 
 #
+
+> ... transform by deleting quotes and commas, ...
 
 ### manual path to ETL into Big Query  
 
@@ -82,6 +92,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... and to load, we need to make a bucket, ...
+
 ### manual path to ETL into Big Query  
 
 **make a bucket**  
@@ -89,6 +101,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="689" alt="stevedepp@Steves-MBP-2" src="https://user-images.githubusercontent.com/38410965/113493660-6b944980-94af-11eb-8c08-4c5807681cd8.png">
 
 #
+
+> ... and then upload.
 
 ### manual path to ETL into Big Query  
 
@@ -98,6 +112,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> for automatic, either these 4 lines could be placed in a cron job.
+
 ### manual path to ETL into Big Query  
 
 **make spaghetti**  
@@ -105,6 +121,10 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="682" alt="- nano injest_p" src="https://user-images.githubusercontent.com/38410965/113493672-967e9d80-94af-11eb-898d-9898a609c41e.png">
 
 #
+
+> or GCP can be employed.
+
+> We need to first adjust the code to ensure those retrieved headers are used for exception handling. Then, ...
 
 ### cron batch ETL pipeline into BQ  
 
@@ -116,6 +136,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... generate and insert a token into main. Then simply ...
+
 ### cron batch ETL pipeline into BQ  
 
 **generate token** - for main.py  
@@ -123,6 +145,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="682" alt="except DataUnavailable as ei" src="https://user-images.githubusercontent.com/38410965/113493716-fa08cb00-94af-11eb-81cc-dafbcfb854d5.png">
 
 #
+
+> ... deploy and call the function, and set up a cron job.
 
 ### cron batch ETL pipeline into BQ  
 
@@ -132,37 +156,86 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 | :---   | :---                                             | 
 | region:| us-central1                                      | 
 | token: | O6tkNdFnCqhwiyiXXutXGdhsmPIv3cBn                 |
-| url:   | ingest_flights_AopAxrUvvzQVPZE0cXvdm8ordW8v9E8S  |
- 	  
- 	  
- 		 
+| url:   | ingest_flights_AopAxrUvvzQVPZE0cXvdm8ordW8v9E8S  |  
 
 <img width="689" alt="stevedepp@Steves-MBP-2" src="https://user-images.githubusercontent.com/38410965/113493737-258bb580-94b0-11eb-8b5d-e394b6298711.png">
 
 #
 
+> Validation can be via cloud scheduler and the logs available there.
 
+### cron batch ETL pipeline into BQ  
 
-| :---            | :---        | :---       | 
-| Fully connected | 17 seconds  | 14 seconds |
-| Convolutional   | 377 seconds | 23 seconds |
+**validate**  
 
+<img width="1453" alt="Google Cloud Platform" src="https://user-images.githubusercontent.com/38410965/113493858-4d2f4d80-94b1-11eb-85bc-a6313edcb1df.png">
+
+<img width="1453" alt="Google Cloud Platform" src="https://user-images.githubusercontent.com/38410965/113493859-4f91a780-94b1-11eb-9306-305d2d811f10.png">
+
+#
+
+> When done remember your wallet!  Kill storage, ...
+
+### shut it down  
+
+**storage**  
+
+<img width="694" alt="Storage browser" src="https://user-images.githubusercontent.com/38410965/113493869-6c2ddf80-94b1-11eb-84f7-45eea8d4f870.png">
+
+#
+
+> ... your timer, 
+
+### shut it down  
+
+**cloud scheduler**  
+
+<img width="1145" alt="Delete selected job" src="https://user-images.githubusercontent.com/38410965/113493885-81a30980-94b1-11eb-8254-3a29b5b82b2e.png">
+
+#
+
+> ... your topic and subscription, ...
+
+### shut it down  
+
+**pub/sub**  
+-	topics  
+-	subscriptions  
+
+<img width="952" alt="Delete topic" src="https://user-images.githubusercontent.com/38410965/113493902-a0a19b80-94b1-11eb-980f-c18134527272.png">
+
+#
+
+> ... and the serverless gears that made it happen. And then breathe.
+
+### shut it down  
+
+**cloud functions**  
+
+<img width="953" alt="ingest_flights_AopAxrUvvzQVPZE0cXvdm8ord" src="https://user-images.githubusercontent.com/38410965/113493913-bca53d00-94b1-11eb-9dbb-5ac6bb2d9e18.png">
+
+#
+
+> I did have hiccups along the way.
+
+### hiccups
+
+-	""'StreamExhausted'" object has no attribute message
+-	several API’s not enables 
+-	multi regional bucket
+-	cron success but no additional files
+
+# 
+
+**thank you for watching**  
+
+feedback please
 
 #
 
 
 
-
-
 #
-
-
-
-
-
-#
-
-
 
 
 

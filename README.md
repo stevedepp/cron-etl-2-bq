@@ -127,9 +127,13 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 ### cron batch ETL pipeline into BQ  
 
 **deploy, call, cron (every 5 minutes)**  
-region: 	us-central1  
-token: 	O6tkNdFnCqhwiyiXXutXGdhsmPIv3cBn  
-url: 		ingest_flights_AopAxrUvvzQVPZE0cXvdm8ordW8v9E8S  
+
+| region:         | us-central1 | 
+| token: | O6tkNdFnCqhwiyiXXutXGdhsmPIv3cBn  |
+| url:   | ingest_flights_AopAxrUvvzQVPZE0cXvdm8ordW8v9E8S  |
+ 	  
+ 	  
+ 		 
 
 <img width="689" alt="stevedepp@Steves-MBP-2" src="https://user-images.githubusercontent.com/38410965/113493737-258bb580-94b0-11eb-8b5d-e394b6298711.png">
 

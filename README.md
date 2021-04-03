@@ -128,8 +128,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 **deploy, call, cron (every 5 minutes)**  
 
-| region:         | us-central1 | 
-| token: | O6tkNdFnCqhwiyiXXutXGdhsmPIv3cBn  |
+| region:| us-central1                                      | 
+| token: | O6tkNdFnCqhwiyiXXutXGdhsmPIv3cBn                 |
 | url:   | ingest_flights_AopAxrUvvzQVPZE0cXvdm8ordW8v9E8S  |
  	  
  	  

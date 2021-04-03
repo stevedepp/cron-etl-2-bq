@@ -128,6 +128,7 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 **deploy, call, cron (every 5 minutes)**  
 
+|        |                                                  |
 | :---   | :---                                             | 
 | region:| us-central1                                      | 
 | token: | O6tkNdFnCqhwiyiXXutXGdhsmPIv3cBn                 |
@@ -142,6 +143,10 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 
 
+|                 | CPU         | GPU        |
+| :---            | :---        | :---       | 
+| Fully connected | 17 seconds  | 14 seconds |
+| Convolutional   | 377 seconds | 23 seconds |
 
 
 #

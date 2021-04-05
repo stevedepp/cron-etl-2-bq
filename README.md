@@ -6,6 +6,8 @@ Transcript & slides are below. Please click this demo video to hear it with soun
 
 #
 
+> Hello everyone thank you for watching my video.  This week i stepped through the manual and automatic versions of ETL presented in Lakshamn’s chapter 2.  For the manual path ...  
+
 **Demo Video 4**  
 ## cron a batch ETL pipeline into Big Query  
 
@@ -33,6 +35,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... adjust the variables for generic month & year scraping, ...
+
 ### manual path to ETL into Big Query  
 
 **download**  
@@ -44,6 +48,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... test it out, ...
+
 ### manual path to ETL into Big Query  
 
 **download**  
@@ -53,9 +59,9 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 <img width="630" alt="_FL_UM2CORIGIN_AIRPORT_ID2CRG_ORTD" src="https://user-images.githubusercontent.com/38410965/113493595-94680f00-94ae-11eb-83c1-1ae57a1a931d.png">
 
-
-
 #
+
+> ... unzip, ...
 
 ### manual path to ETL into Big Query  
 
@@ -66,6 +72,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... transform by deleting quotes and commas, ...
+
 ### manual path to ETL into Big Query  
 
 **unzip**  
@@ -74,6 +82,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... and to load, we need to make a bucket, ...
+
 ### manual path to ETL into Big Query  
 
 **quotes and commas**  
@@ -81,6 +91,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="682" alt="depp_dr4 touch quotes_commas sh" src="https://user-images.githubusercontent.com/38410965/113493650-4f90a800-94af-11eb-8c9c-d4812f745866.png">
 
 #
+
+> ... and then upload.
 
 ### manual path to ETL into Big Query  
 

@@ -203,18 +203,31 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
-> ... and the serverless gears that made it happen.
+> ... and the serverless gears that made it happen.  And breathe ...
 
 ### shut it down  
 
 **cloud functions**  
 
-#
-
-
+<img width="953" alt="ingest_flights_AopAxrUvvzQVPZE0cXvdm8ord" src="https://user-images.githubusercontent.com/38410965/113592545-4e708f80-9603-11eb-8287-99b317cad50f.png">
 
 #
 
+> I did have hiccups along the way
 
+### hiccups
+
+-	""'StreamExhausted'" object has no attribute message
+-	several API’s not enables 
+-	multi regional bucket
+-	cron success but no additional files
+
+#
+
+> Thank you for watching.
+
+thank you for watching 
+
+feedback please
 
 #

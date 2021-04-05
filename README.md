@@ -34,8 +34,7 @@ Lakshmanan, V. (2017). Data Science on the Google Cloud Platform: Implementing
 End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly Media, Inc.".  
 
 #
-
-> ... adjust the variables for generic month & year scraping, ...
+> ... we need to arrange for proper scraping to download headings and variables, ...
 
 ### manual path to ETL into Big Query  
 
@@ -48,7 +47,7 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
-> ... test it out, ...
+> ... adjust the variables for generic month & year scraping, ...
 
 ### manual path to ETL into Big Query  
 
@@ -61,7 +60,7 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
-> ... unzip, ...
+> ... test it out, ...
 
 ### manual path to ETL into Big Query  
 
@@ -72,7 +71,7 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
-> ... transform by deleting quotes and commas, ...
+> ... unzip, ...
 
 ### manual path to ETL into Big Query  
 
@@ -82,7 +81,7 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
-> ... and to load, we need to make a bucket, ...
+> ... transform by deleting quotes and commas, ...
 
 ### manual path to ETL into Big Query  
 
@@ -92,7 +91,7 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
-> ... and then upload.
+> ... and to load, we need to make a bucket, ...
 
 ### manual path to ETL into Big Query  
 
@@ -102,6 +101,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... and then upload.
+
 ### manual path to ETL into Big Query  
 
 **upload**  
@@ -110,6 +111,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> For automatic, either these 4 lines could be placed in a cron job. 
+
 ### manual path to ETL into Big Query  
 
 **make spaghetti**  
@@ -117,6 +120,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="682" alt="- nano injest_p" src="https://user-images.githubusercontent.com/38410965/113493672-967e9d80-94af-11eb-898d-9898a609c41e.png">
 
 #
+
+> Or GCP can be employed: we need to first adjust the code to ensure those retrieved headers are used for exception handling. 
 
 ### cron batch ETL pipeline into BQ  
 
@@ -128,6 +133,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> Then, generate and insert a token into main.
+
 ### cron batch ETL pipeline into BQ  
 
 **generate token** - for main.py  
@@ -135,6 +142,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="682" alt="except DataUnavailable as ei" src="https://user-images.githubusercontent.com/38410965/113493716-fa08cb00-94af-11eb-81cc-dafbcfb854d5.png">
 
 #
+
+> Then simply deploy and call the function … and set up a cron job
 
 ### cron batch ETL pipeline into BQ  
 
@@ -146,12 +155,11 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 | token: | O6tkNdFnCqhwiyiXXutXGdhsmPIv3cBn                 |
 | url:   | ingest_flights_AopAxrUvvzQVPZE0cXvdm8ordW8v9E8S  |
  	  
- 	  
- 		 
-
 <img width="689" alt="stevedepp@Steves-MBP-2" src="https://user-images.githubusercontent.com/38410965/113493737-258bb580-94b0-11eb-8b5d-e394b6298711.png">
 
 #
+
+> Validation, can be via cloud scheduler and the logs available there.
 
 ### cron batch ETL pipeline into BQ  
 
@@ -163,6 +171,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> when done remember your wallet!: kill storage, ...
+
 ### shut it down  
 
 **storage**  
@@ -171,6 +181,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... your timer, ...
+
 ### shut it down  
 
 **cloud scheduler**  
@@ -178,6 +190,8 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 <img width="1145" alt="Delete selected job" src="https://user-images.githubusercontent.com/38410965/113493885-81a30980-94b1-11eb-8254-3a29b5b82b2e.png">
 
 #
+
+> ... your topic and subscription, ...
 
 ### shut it down  
 
@@ -189,11 +203,11 @@ End-to-end Real-time Data Pipelines: from Ingest to Machine Learning. " O'Reilly
 
 #
 
+> ... and the serverless gears that made it happen.
+
 ### shut it down  
 
 **cloud functions**  
-
-
 
 #
 

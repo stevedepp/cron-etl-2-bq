@@ -1,4 +1,4 @@
-## cron a batch ITL into BigQuery
+## cron a batch ETL into BigQuery
 
 Transcript & slides are below. Please click this demo video to hear it with sound.
 

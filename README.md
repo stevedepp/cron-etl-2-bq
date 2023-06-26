@@ -1,13 +1,9 @@
 ## cron a batch ETL into BigQuery
 
-Transcript & slides are below. Please click this demo video to hear it with sound.
-
+Transcript & slides are below. Please unmute this demo video to hear it with sound.  Resolution is improved in full screen.
 
 <video src="https://user-images.githubusercontent.com/38410965/111926144-0c334400-8a82-11eb-9af7-d5a19c9afdf4.mp4" autoplay controls loop muted style="max-width: 730px;">
 </video>
-
-
-![](https://user-images.githubusercontent.com/38410965/111926144-0c334400-8a82-11eb-9af7-d5a19c9afdf4.mp4)
 
 #
 
